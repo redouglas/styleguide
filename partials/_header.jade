@@ -1,0 +1,13 @@
+header
+  .navigation
+    a.logo(href="/")
+    nav
+      ul
+        each page, slug in pages
+          - var cur = current.source == 'index' ? '/' : current.source
+            li(class="#{ cur == slug ? 'active' : '' }")
+              a(href=slug)= page.name
+  .title
+    - var cur = current.source == 'index' ? '/' : current.source
+      h1= pages[cur].name
+      p.subtitle= pages[cur].subtitle

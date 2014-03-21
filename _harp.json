@@ -1,0 +1,96 @@
+{
+  "globals" : {
+    "site_name"   :   "Styleguide",
+    "pages" : {
+      "/": {
+        "name"        : "Intro",
+        "subtitle"    : "Welcome to the style guide.",
+        "subsections" : []
+      },
+      "basics": {
+        "name"        : "The Basics",
+        "subtitle"    : "Basic styles for the common HTML elements like typography, tables, forms and buttons.",
+        "subsections" : [
+          {
+            "slug"    : "typography",
+            "display" : "Typography"
+          },
+          {
+            "slug"    : "colors",
+            "display" : "Colors"
+          },
+          {
+            "slug"    : "grades",
+            "display" : "Grades"
+          },
+          {
+            "slug"    : "Icons",
+            "display" : "Icons"
+          },
+          {
+            "slug"    : "buttons",
+            "display" : "Buttons"
+          },
+          {
+            "slug"    : "form-elements",
+            "display" : "Form Elements"
+          },
+          {
+            "slug"    : "forms",
+            "display" : "Forms"
+          },
+          {
+            "slug"    : "notifications",
+            "display" : "Notifications"
+          },
+          {
+            "slug"    : "modals",
+            "display" : "Modals"
+          }
+        ]
+      },
+      "components": {
+        "name"        : "Components",
+        "subtitle"    : "Examples of how to group the basic elements together to create components.",
+        "subsections" : [
+          {
+            "slug"    : "dropdown-menus",
+            "display" : "Dropdown Menus"
+          },
+          {
+            "slug"    : "dropdown-button",
+            "display" : "Dropdown Button"
+          },
+          {
+            "slug"    : "buttons-groups",
+            "display" : "Button Groups"
+          },
+          {
+            "slug"    : "breadcrumbs",
+            "display" : "Breadcrumbs"
+          },
+          {
+            "slug"    : "navigation",
+            "display" : "Navigation"
+          },
+          {
+            "slug"    : "images",
+            "display" : "Images"
+          },
+          {
+            "slug"    : "videos",
+            "display" : "Videos"
+          },
+          {
+            "slug"    : "maps",
+            "display" : "Maps"
+          },
+          {
+            "slug"    : "alerts",
+            "display" : "Alerts"
+          }
+        ]
+      }
+    }
+  }
+}
