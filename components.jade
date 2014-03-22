@@ -1,2 +1,5 @@
-h2 
-  a(id="dropdown-menus") Dropdown Menus
+- var cur = current.source == 'index' ? '/' : current.source
+  each item in pages[cur].subsections
+    h2.styleguide
+      a(id="#{item.slug}")= item.display
+    != partial("partials/" + current.source + "/_" + item.slug)

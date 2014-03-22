@@ -1,0 +1,12 @@
+include ../_mixins
+
+p.styleguide
+  | Button styles can be applied to anything with the <code>.btn</code> class applied. 
+  | However, typically you'll want to apply these to only <code>&lt;a&gt;</code> and 
+  | <code>&lt;button&gt;</code> elements for the best rendering. Text link styles can 
+  | only be used with an <code>&lt;a&gt;</code> element.</p>
+
++demo('\
+  <a class="btn" href="#"> \
+    Button \
+  </a>')

@@ -12,16 +12,22 @@ html
     main
       - var cur = current.source == 'index' ? '/' : current.source
         - if(pages[cur].subsections.length > 0)
-          .subnav
+          .subnav.styleguide
             ul
               each item in pages[cur].subsections
                 li
                   a(href="##{item.slug}" title="Jump to #{item.display}")= item.display
-          .content.sidebar
+          .content.sidebar.styleguide
             != yield
         - else
-          .content.no-sidebar
+          .content.no-sidebar.styleguide
             != yield
 
     script(src="js/vendor/jquery-2.0.3.min.js")
     script(src="js/application.js")
+
+mixin demo(example)
+  .demo
+    .example.rendered!= example
+    .code-sample
+      code= example

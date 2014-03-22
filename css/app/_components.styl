@@ -1,0 +1,86 @@
+// Example Widget
+.example.styleguide
+  border: 1px solid border-color
+  vendor(border-radius, border-curve)
+  margin: 10px 0
+  position: relative
+  overflow: hidden
+
+  &:after
+    content: "Example"
+    position: absolute
+    top: 0
+    right: 0
+    border-bottom: 1px solid border-color
+    border-left: 1px solid border-color
+    padding: 5px
+    font-size: 0.6em
+    background: background-grey
+    text-transform: uppercase
+    color: rgba(0,0,0,0.4)
+
+  .content
+    padding: 32px 10px 10px 10px
+    position: relative
+
+// Demo Widget (Example + Code Sample)
+.demo.styleguide
+  border: 1px solid border-color
+  vendor(border-radius, border-curve)
+  margin: 10px 0
+  position: relative
+  overflow: hidden
+
+  .example
+    padding: 32px 10px 10px 10px
+    border-bottom: 1px solid border-color
+    position: relative
+
+    &:after
+      content: "Output"
+      position: absolute
+      top: 0
+      right: 0
+      border-bottom: 1px solid border-color
+      border-left: 1px solid border-color
+      padding: 5px
+      font-size: 0.6em
+      background: background-grey
+      text-transform: uppercase
+      color: rgba(0,0,0,0.4)
+
+  code
+    display: block
+    padding: 10px
+    color: #000
+    background-color: background-grey
+    font-family: Consolas, Monaco, 'Andale Mono', monospace
+    font-size: 0.8em
+    max-height: 350px
+    overflow-y: scroll
+
+// Color Widget
+.color.styleguide
+  width: 150px
+  height: 200px
+  float: left
+  border: 1px solid border-color
+  position: relative
+  margin: 0 20px 20px 0
+  overflow: hidden
+  vendor(border-radius, border-curve)
+
+  .info
+    height: 65px
+    padding-top: 5px
+    background-color: background-grey
+    position: absolute
+    bottom: 0
+    width: 100%
+    font-size: 0.8em
+    text-indent: 5px
+    line-height: 1.5em
+
+    .name
+      font-weight: bold
+

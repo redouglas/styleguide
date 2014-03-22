@@ -20,10 +20,6 @@
             "display" : "Colors"
           },
           {
-            "slug"    : "grades",
-            "display" : "Grades"
-          },
-          {
             "slug"    : "Icons",
             "display" : "Icons"
           },

@@ -1,0 +1,90 @@
+@import _mixins
+
+body
+  font-family: "Lato"
+  background: #fff
+  color: #000
+  margin: 0
+  padding: 0
+  counter-reset: headers, subnav
+
+main
+  padding: 20px 0
+  margin: 0 bodySideMargin
+  position: relative
+
+  subnavWidth = 220px
+
+  .subnav.styleguide
+    width: subnavWidth
+    float: left
+
+    ul
+      vendor(border-radius, border-curve)
+      border: 1px solid border-color
+      overflow: hidden
+
+      li
+        border-bottom: 1px solid border-color
+        counter-increment: subnav
+
+        &:last-child
+          border-bottom: 0
+
+        a
+          bgColor = #F5F5F5
+          txtColor = #000
+          display: block
+          width: 92%
+          height: 90%
+          padding: 5% 4%
+          text-decoration: none
+          color: lighten(txtColor, 40)
+          background-color: bgColor
+
+          &:before
+            content: counter(subnav) ". "
+
+          &:hover
+            color: txtColor
+            background-color: lighten(bgColor, 5)
+    
+  .content.styleguide
+    float: left
+    min-height: 300px
+    width: 100%
+
+    &.sidebar
+      margin-left: 20px
+      width: calc(100% - 220px - 20px)
+
+    h2.styleguide
+      text-transform: uppercase
+      font-weight: 700
+      margin: 80px 0 20px 0
+      padding: 0 0 5px 0
+      font-size: 1.2em
+      text-align: left
+      display: block
+      border-bottom: 1px solid border-color
+
+      &:before
+        counter-increment: headers
+        content: counter(headers) ". "
+
+      &:first-child
+        margin-top: 0
+
+    p.styleguide
+      line-height: 1.6em
+
+      code
+        padding: 1px 2px
+        color: highlight-color-dark
+        background-color: #f7f7f9
+        border: 1px solid #e1e1e8
+        white-space: nowrap
+        font-size: 0.85em
+        vendor(border-radius, 3px)
+
+    

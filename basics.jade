@@ -1,11 +1,5 @@
-mixin demo(example)
-  .demo
-    .example.rendered!= example
-    .code-sample
-      code= example
-
-
-h2
-  a(id="buttons") Buttons
-p Button styles can be applied to anything with the <code>.btn</code> class applied. However, typically you'll want to apply these to only <code>&lt;a&gt;</code> and <code>&lt;button&gt;</code> elements for the best rendering. Text link styles can only be used with an <code>&lt;a&gt;</code> element.</p>
-+demo('<a class="btn" href="#">Button</a>')
+- var cur = current.source == 'index' ? '/' : current.source
+  each item in pages[cur].subsections
+    h2.styleguide
+      a(id="#{item.slug}")= item.display
+    != partial("partials/" + current.source + "/_" + item.slug)

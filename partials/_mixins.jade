@@ -1,0 +1,16 @@
+mixin demo(example)
+  .demo.styleguide
+    .example.rendered!= example
+    .code-sample
+      code= example
+
+mixin example(example)
+  .example.styleguide
+    .content.rendered!= example
+
+mixin color(name, hex, rgb)
+  .color.styleguide(style="background-color:" + hex)
+    .info
+      .name= name
+      .hex= hex
+      .rgb= rgb

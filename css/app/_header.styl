@@ -1,0 +1,99 @@
+@import _mixins
+
+header.styleguide
+  display: block
+  padding: 0
+  border-bottom: 1px solid #b3b3b3
+  padding-top: headerHeight
+
+  .navigation
+    width: 100%
+    height: headerHeight
+    background: #fff
+    vendor(box-shadow, 0 0 5px 3px rgba(0,0,0,0.3))
+    position: fixed
+    top: 0
+    left: 0
+    z-index: 999
+
+  a.logo
+    float: left
+    margin-top: 10px
+    height: headerHeight - 20px
+    width: 20%
+    text-transform: uppercase
+    letter-spacing: 2px
+    color: #fff
+    text-decoration: none
+    margin-left: bodySideMargin
+    background-size: contain
+    background-position: left center
+    background-repeat: no-repeat
+    background-image: url(../../img/logo.png)
+
+  nav
+    margin-right: bodySideMargin
+    float: right
+    height: 100%
+
+    ul
+      padding: 0
+      list-style-type: none
+      height: 100%
+
+      li
+        float: left
+        border-right: 1px solid border-color
+        height: 100%
+
+        &:first-child
+          border-left: 1px solid border-color
+
+        &:last-child
+          margin-right: 0
+
+        &.active a
+          color: #000
+          background-color: background-grey
+
+          &:after
+            content: ""
+            position: absolute
+            border-top: 6px solid background-grey
+            border-left: 10px solid transparent
+            border-right: 10px solid transparent
+            top: 100%
+            left: 50%
+            margin-left: -10px
+
+        a
+          color: #333
+          text-decoration: none
+          padding: 0 20px
+          height: 100%
+          display: block
+          position: relative
+          line-height: headerHeight
+
+          &:hover
+            color: #000
+            background: background-grey
+
+  .title
+    title-padding = 40px
+    width: 100%
+    background-color: highlight-color-dark
+    color: #fff
+    text-align: left
+
+    h1, p
+      margin-left: bodySideMargin
+      margin-right: bodySideMargin
+
+    h1
+      padding: title-padding 0 10px 0
+      font-size: 3em
+      font-weight: 300
+
+    p
+      padding: 0 0 (title-padding + 10px) 0
