@@ -1,12 +1,16 @@
-HARP.js Boilerplate
+HARP.js Styleguide
 ====================
-My starter Harp.js app. Get prototyping in minutes, or use it to learn by example! This will set you up with a partial, a layout, global variables, and a bunch of other useful features such as stylus mixins, icon fonts, and more!
+This will provide a basic skeleton app for a web design styleguide. 
+
+Currently very much WIP.
 
 Usage
 -----
 
-* install [Node](http://nodejs.org/download/)
-* install Harp.js ```npm install -g harp```
-* clone the repo
-* start the server with ```harp server```
-* get coding!
+* install [Node](http://nodejs.org/download/) `brew install node`
+* install Harp.js `npm install -g harp`
+* clone this repo somewhere
+* cd into the project directory
+* start the server with `harp server`
+* edit pages object in `/_harp.json`
+* add/edit/remove the various sections in each corresponding view
